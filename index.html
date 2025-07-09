@@ -22,6 +22,12 @@
     <div id="subHeadDiv">Located in Hudson, Florida — serving authentic Chinese cuisine.</div>
     <div id="forwardDiv">We’re forwarding you. (Or <a href="https://places.singleplatform.com/green-tea-chinese-restaurant-2/menu">click here</a>).</div>
 
+    <div id="redirectBox" style="text-align:center; font-family:sans-serif; margin:20px auto;">
+      <p style="font-size: 16px;">Redirecting in <span id="countdown">10</span> seconds...</p>
+      <p style="font-size: 12px; color: #888;">This forwards visitors to an official page.</p>
+    </div>
+
+
     <footer>
       
       <div id="taglineDiv">
@@ -71,27 +77,28 @@
       function goRedirect() { window.location.href = "https://places.singleplatform.com/green-tea-chinese-restaurant-2/menu"; }
       
       window.onload = function() {
-        redirectTimer = setTimeout(goRedirect, 6000);
+        redirectTimer = setTimeout(goRedirect, 10000);
       }
-
-      
-      function ex() {
-        
-        clearTimeout(redirectTimer);
-        
-        redirectTimer = setTimeout(goRedirect, 6000);
-        
-        window.removeEventListener("mousemove", ex);
-        window.removeEventListener("scroll", ex);
-        window.removeEventListener("click", ex);
-        
-      }
-      
-      window.addEventListener("mousemove", ex);
-      window.addEventListener("scroll", ex);
-      window.addEventListener("click", ex);
     
     </script>
+
+
+    <script>
+      
+      let seconds = 10;
+      const countdownEl = document.getElementById('countdown');
+      
+      const timer = setInterval(() => {
+        seconds--;
+        countdownEl.textContent = seconds;
+        if (seconds <= 0) {
+          clearInterval(timer);
+          window.location.href = "https://places.singleplatform.com/green-tea-chinese-restaurant-2/menu";
+        }
+      }, 1000);
+      
+    </script>
+    
 
 
     <script type="application/ld+json"> {
