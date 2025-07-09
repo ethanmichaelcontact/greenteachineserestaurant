@@ -1,0 +1,26 @@
+#headerDiv {
+
+  font-size: calc(24px + 1vh);
+  
+}
+
+#subHeadDiv {
+
+  font-size: calc(18px + 1vh);
+
+}
+
+#forwardDiv {
+
+  font-size: calc(12px + 1vh);
+
+}
+
+#taglineDiv {
+  
+  background-color:rgba(0, 0, 0, 0.5);
+  color:rgba(0, 0, 0, 0.5);
+
+  font-size: calc(8px + 1vh);
+
+}
