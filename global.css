@@ -7,6 +7,12 @@ body {
   
 }
 
+#bodyDiv {
+
+  background-color: rgba(0, 0, 0, 0.05);
+
+}
+
 #headerDiv {
 
   font-size: calc(24px + 1vh);
