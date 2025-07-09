@@ -18,8 +18,7 @@
 
 #taglineDiv {
   
-  background-color:rgba(0, 0, 0, 0.5);
-  color:rgba(0, 0, 0, 0.5);
+  color:rgba(0, 0, 0, 0.3333);
 
   font-size: calc(8px + 1vh);
 
